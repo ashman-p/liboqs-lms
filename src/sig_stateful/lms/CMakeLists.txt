@@ -26,32 +26,6 @@ set(SRCS
          external/lm_verify.c
          external/sha256.c)
  
- 
- 
-# sig_stfl_xmss_sha256.c
-#         sig_stfl_xmss_sha512.c
-#         sig_stfl_xmss_shake256.c
-#         sig_stfl_xmss_shake512.c
-#         sig_stfl_xmssmt_h20.c
-#         sig_stfl_xmssmt_h40.c
-#         sig_stfl_xmssmt_h60.c
-#         sig_stfl_xmss_xmssmt_functions.c 
- 
-#demo.c         
-#test_h25.c
-#test_hss.c
-##test_keygen.c
-#test_keyload.c
-#test_load.c
-#test_reserve.c
-#test_sign.c
-#test_sign_inc.c
-#test_stat.c
-#test_testvector.c
-#test_thread.c
-#test_verify.c
-#test_verify_inc.c
-
 add_library(lms OBJECT ${SRCS})
 target_include_directories(lms PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/external)
 target_compile_definitions(lms PRIVATE OQS
